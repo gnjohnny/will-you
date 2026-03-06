@@ -48,6 +48,7 @@ var noBtnClicked = () => {
 
     noBtn.removeEventListener("click", noBtnClicked);
     noBtn.addEventListener("mouseover", changePosition);
+    noBtn.addEventListener("touchstart", changePosition);
   }
 };
 
