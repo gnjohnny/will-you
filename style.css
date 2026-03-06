@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8c8dc;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.question {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sticker_img {
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.yes_btn,
+.no_btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+}
+
+.yes_btn {
+  background-color: #1cc01c;
+  color: #fff;
+}
+
+.no_btn {
+  background-color: #b31414;
+  color: #ccc;
+}
+
+.yes_btn:hover {
+  background-color: #1cc01cc9;
+}
+
+.no_btn:hover {
+  background-color: #b31414cb;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #b31414;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  animation: floatUp 2s ease-out forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+}
